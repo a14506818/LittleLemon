@@ -10,8 +10,5 @@ class Menu(models.Model):
     Title = models.CharField(max_length=255)
     Price = models.FloatField()
     Inventory = models.IntegerField()
-    def get_item(self):
-        return f'{self.title} : {str(self.price)}'
-
     def __str__(self):
-        return f'{self.title} : {str(self.price)}'
+        return f'{self.Title} : {str(self.Price)}'

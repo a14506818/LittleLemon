@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='menu',
             name='Title',
-            field=models.CharField(max_length=2),
+            field=models.CharField(max_length=255),
         ),
     ]
